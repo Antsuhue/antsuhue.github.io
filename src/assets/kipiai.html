@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://localhost:8080/kip.ico">
+    <title>Kipiai</title>
+  <link href="http://localhost:8080/js/0.js" rel="prefetch"><link href="kipiai_arquivos/1.js" rel="prefetch"><link href="http://localhost:8080/js/2.js" rel="prefetch"><link href="http://localhost:8080/js/3.js" rel="prefetch"><link href="http://localhost:8080/js/4.js" rel="prefetch"><link href="http://localhost:8080/js/5.js" rel="prefetch"><link href="http://localhost:8080/js/6.js" rel="prefetch"><link href="kipiai_arquivos/app.js" rel="preload" as="script"><link href="kipiai_arquivos/chunk-vendors.js" rel="preload" as="script"><style type="text/css">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap);</style><style type="text/css">
+.form[data-v-d6e98af6] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form input[data-v-d6e98af6] {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+.label-input[data-v-d6e98af6] {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+input[data-v-d6e98af6]:-webkit-autofill 
+{
+    -webkit-text-fill-color: #000 !important;
+}
+.btn[data-v-d6e98af6] {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btn-second[data-v-d6e98af6] {
+    background-color: #ff8560;
+    border: 1px solid #ff8560;
+    transition: background-color .5s;
+}
+.btn-second[data-v-d6e98af6]:hover {
+    background-color: #fff;
+    border: 1px solid #ff8560;
+    color: #ff8560;
+}
+a[data-v-d6e98af6]{
+    margin-top: 15px;
+    font-style:  italic;
+    font-size: 14px;
+    color: rgb(131, 131, 131);
+}
+@media screen and (max-width: 1040px) {
+.form[data-v-d6e98af6] {
+        width: 90%;
+}
+}
+
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap);</style><style type="text/css">
+*[data-v-fae5bece] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container[data-v-fae5bece] {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d7edf3ea;
+}
+.content[data-v-fae5bece] {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content[data-v-fae5bece]::before {
+    content: "";
+    position: absolute;
+    background-color: #ff8560;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    left: 0;
+}
+.title[data-v-fae5bece] {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary[data-v-fae5bece] {
+    color: #fff;
+}
+.title-second[data-v-fae5bece] {
+    color: #ff8560;
+}
+.description[data-v-fae5bece] {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary[data-v-fae5bece] {
+    color: #fff;
+}
+.description-second[data-v-fae5bece] {
+    color: #7f8c8d;
+}
+.btn[data-v-fae5bece] {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btn-primary[data-v-fae5bece] {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btn-primary[data-v-fae5bece]:hover {
+    background-color: #fff;
+    color: #ff8560;
+}
+.first-content[data-v-fae5bece] {
+    display: flex;
+}
+.first-column[data-v-fae5bece] {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.second-column[data-v-fae5bece] {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media[data-v-fae5bece] {
+    margin: 1rem 0;
+}
+
+/*VERSÃO MOBILE*/
+@media screen and (max-width: 1040px) {
+.content[data-v-fae5bece] {
+        width: 100%;
+        height: 100%;
+}
+.content[data-v-fae5bece]::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+}
+.first-content[data-v-fae5bece], .second-content[data-v-fae5bece] {
+        flex-direction: column;
+        justify-content: space-around;
+}
+.first-column[data-v-fae5bece], .second-column[data-v-fae5bece] {
+        width: 100%;
+}
+    /* ANIMAÇÃO MOBILE CSS*/
+@-webkit-keyframes deslocamentoEsq-fae5bece {
+from {
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+}
+25% {
+            top: -80px;
+            opacity: .5;
+}
+50% {
+            top: -100px;
+            opacity: .2;
+}
+to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+}
+}
+@keyframes deslocamentoEsq-fae5bece {
+from {
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+}
+25% {
+            top: -80px;
+            opacity: .5;
+}
+50% {
+            top: -100px;
+            opacity: .2;
+}
+to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+}
+}
+@-webkit-keyframes deslocamentoDir-fae5bece {
+from {
+            top: 0;
+            z-index: 12;
+}
+25% {
+            top: 80px;
+}
+50% {
+            top: 100px;
+}
+to {
+            top: 110px;
+            z-index: -1;
+}
+}
+@keyframes deslocamentoDir-fae5bece {
+from {
+            top: 0;
+            z-index: 12;
+}
+25% {
+            top: 80px;
+}
+50% {
+            top: 100px;
+}
+to {
+            top: 110px;
+            z-index: -1;
+}
+}
+@-webkit-keyframes slidein-fae5bece {
+from {
+            top: 0;
+            height: 40%;
+}
+25% {
+            top: 5%;
+            height: 50%;
+}
+50% {
+            top: 25%;
+            height: 60%;
+}
+75% {
+            top: 45%;
+            height: 50%;
+}
+to {
+            top: 60%;
+            height: 40%;
+}
+}
+@keyframes slidein-fae5bece {
+from {
+            top: 0;
+            height: 40%;
+}
+25% {
+            top: 5%;
+            height: 50%;
+}
+50% {
+            top: 25%;
+            height: 60%;
+}
+75% {
+            top: 45%;
+            height: 50%;
+}
+to {
+            top: 60%;
+            height: 40%;
+}
+}
+@-webkit-keyframes slideout-fae5bece {
+from {
+            top: 60%;
+            height: 40%;
+}
+25% {
+            top: 45%;
+            height: 50%;
+}
+50% {
+            top: 25%;
+            height: 60%;
+}
+75% {
+            top: 5%;
+            height: 50%;
+}
+to {
+            top: 0;
+            height: 40%;
+}
+}
+@keyframes slideout-fae5bece {
+from {
+            top: 60%;
+            height: 40%;
+}
+25% {
+            top: 45%;
+            height: 50%;
+}
+50% {
+            top: 25%;
+            height: 60%;
+}
+75% {
+            top: 5%;
+            height: 50%;
+}
+to {
+            top: 0;
+            height: 40%;
+}
+}
+}
+
+</style><script charset="utf-8" src="kipiai_arquivos/1.js"></script><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap);</style><style type="text/css">
+ul[data-v-9bcc0be2]{
+    list-style: none;
+    padding: 0;
+    transition:all 0.5s;
+    overflow:hidden;
+}
+nav[data-v-9bcc0be2]{
+    background: #ff8560;
+    padding:0px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 5px 5px 4px #f8ab94;
+}
+p[data-v-9bcc0be2]{
+    color:white;
+}
+nav[data-v-9bcc0be2], ul[data-v-9bcc0be2] {
+    display:flex;
+    flex-direction: row;
+}
+li[data-v-9bcc0be2]{
+    padding: 0 20px;
+}
+h1[data-v-9bcc0be2]{
+    margin:0;
+    padding: 10px;
+}
+button[data-v-9bcc0be2]{
+    background-color: transparent;
+    border:none;
+    color:#fff;
+    font-size:40px;
+    position: absolute;
+    right:15px;
+    top:10px;
+    display:none;
+}
+li[data-v-9bcc0be2]:hover,
+button[data-v-9bcc0be2]:hover
+{
+    cursor:pointer;
+}
+button:focus ~ ul[data-v-9bcc0be2]{
+    height: 170px;
+}
+@media (max-width:700px){
+nav[data-v-9bcc0be2],ul[data-v-9bcc0be2]{
+        flex-direction: column;
+}
+ul[data-v-9bcc0be2]{
+        text-align: center;
+        margin:0;
+        height: 0;
+}
+nav[data-v-9bcc0be2]{
+        padding:0;
+        border-radius: 10px 0px 0px 10px;
+}
+h1[data-v-9bcc0be2]{
+        margin:center
+}
+button[data-v-9bcc0be2]{
+        display: flex;
+        margin-top: 4px;
+}
+li[data-v-9bcc0be2]{
+        width: 100%;}
+}
+</style></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but kipiai doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app" data-v-app=""><div></div><div><div data-v-9bcc0be2=""><nav data-v-9bcc0be2=""><div class="logo" data-v-9bcc0be2=""><h1 data-v-9bcc0be2=""><img src="kipiai_arquivos/logo.png" data-v-9bcc0be2="" width="100"></h1></div><button data-v-9bcc0be2="">☰</button><ul data-v-9bcc0be2=""><li data-v-9bcc0be2=""><p data-v-9bcc0be2="">Inicial</p></li><li data-v-9bcc0be2=""><p data-v-9bcc0be2="">Config</p></li><li data-v-9bcc0be2=""><p data-v-9bcc0be2="">Sair</p></li></ul></nav></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="kipiai_arquivos/chunk-vendors.js"></script><script type="text/javascript" src="kipiai_arquivos/app.js"></script>
+</body></html>
